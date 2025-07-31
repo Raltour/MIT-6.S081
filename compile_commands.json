@@ -1,0 +1,27 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/riscv64-linux-gnu-gcc",
+      "-Wall",
+      "-Werror",
+      "-O",
+      "-fno-omit-frame-pointer",
+      "-ggdb",
+      "-DSOL_UTIL",
+      "-mcmodel=medany",
+      "-ffreestanding",
+      "-fno-common",
+      "-mno-relax",
+      "-I.",
+      "-fno-stack-protector",
+      "-fno-pie",
+      "-c",
+      "-o",
+      "user/sh.o",
+      "user/sh.c"
+    ],
+    "directory": "/home/raltour/MIT-6.S081",
+    "file": "/home/raltour/MIT-6.S081/user/sh.c",
+    "output": "/home/raltour/MIT-6.S081/user/sh.o"
+  }
+]
