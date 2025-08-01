@@ -19,6 +19,8 @@ RUN git config --global --add safe.directory /xv6 && \
     mkdir -p /usr/lib/gcc-cross/riscv64-linux-gnu/13/include && \
     ln -s /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/stdarg.h /usr/lib/gcc-cross/riscv64-linux-gnu/13/include/
 
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 WORKDIR /xv6
 
 COPY . /xv6/
