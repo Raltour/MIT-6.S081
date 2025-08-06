@@ -297,6 +297,12 @@ fork(void)
 
   release(&np->lock);
 
+
+  //used for trace system call.
+  np->trace_mask = p->trace_mask;
+
+
+
   return pid;
 }
 
